@@ -1,0 +1,65 @@
+@charset "utf-8";
+body{
+  margin: 0;
+}
+.header-logo{
+  padding-left:30px;
+  font-size: 32px;
+  color:#666;
+  display: block;
+  float:left;
+}
+.sub-logo{
+  font-size: 12px;
+  color:#666;
+}
+.header-inner{
+  padding:20px 0 5px 0;
+  border-bottom: 2px solid #666;
+  margin:0 30px;
+  height: 50px;
+  overflow: hidden;
+}
+ul{
+  list-style-type: none;
+  float:right;
+  margin-right: 20px
+  color:#666;
+}
+ .header-inner li{
+  float:left;
+  margin-right: 20px;
+  color:#666;
+}
+.main-inner{
+  margin:30px;
+  overflow: hidden;
+}
+.logo{
+  font-size: 48px;
+  color:#888;
+}
+img{
+  display: block;
+}
+.pic1{
+  float:left;
+  margin:0 20px 0 0;
+  position: relative;
+}
+.pic2{
+  float:left;
+  margin:0 20px 0 0;
+}
+.message{
+  color:#888;
+  line-height: 32px;
+}
+.mes{
+  font-size:24px;
+}
+footer{
+  padding:30px 0;
+  text-align: center;
+  background: #eee;
+}
