@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+body{
+  margin:0;
+  font-family: "gulim";
+}
+.container{
+  background: #483d8b;
+}
+ul{
+  list-style-type: none;
+  color:#fff8dc;
+  padding-top:30px;
+  padding-bottom:80px;
+}
+li{
+  float:left;
+  margin-right: 28px;
+}
+.big-circle{
+  clear:both;
+  text-align: center;
+  color:#483d8b;
+  background: #fff8dc;
+  height:500px;
+  width:500px;
+  border-radius: 250px;
+  font-size:60px;
+  line-height:200px;
+  border:4px solid #fffff0;
+  margin:auto;
+}
+.person{
+  background: #eee8aa;
+  height:150px;
+  width:150px;
+  border:1px solid #fffff0;
+  border-radius: 75px;
+  text-align: center;
+}
+.person:hover{
+  background:#f0e68c;
+  height:180px;
+  width:180px;
+  border-radius: 90px;
+  border:3px solid #fffff0;
+}
+.first{
+  position:absolute;top:100px;left:300px;
+}
+.first:hover{
+  position:absolute;top:85px;left:285px;
+}
+.second{
+  position:absolute;top:100px;left:570px;
+}
+.second:hover{
+  position:absolute;top:85px;left:555px;
+}
+.third{
+  position:absolute;top:340px;left:180px;
+}
+.third:hover{
+  position:absolute;top:325px;left:165px;
+}
+.forth{
+  position:absolute;top:340px;left:700px;
+}
+.forth:hover{
+  position:absolute;top:325px;left:685px;
+}
+.fifth{
+  position:absolute;top:530px;left:300px;
+}
+.fifth:hover{
+  position:absolute;top:515px;left:285px;
+}
+.sixth{
+  position:absolute;top:530px;left:570px;
+}
+.sixth:hover{
+  position:absolute;top:515px;left:555px;
+}
+.seventh{
+  position:absolute;top:365px;left:435px;
+}
+.seventh:hover{
+  position:absolute;top:350px;left:420px;
+}
+.name{
+  margin-top: 0;
+  color:#483d8b;
+}
+.img{
+  border-radius: 50px;
+}
+footer{
+  background:#191970;
+  color:#f0e68c;
+  text-align: center;
+  padding:40px 0 30px 0;
+  margin-top:60px;
+}
