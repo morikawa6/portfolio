@@ -1,0 +1,84 @@
+@charset "utf-8"
+
+body{
+  margin:0;
+}
+header{
+  background: #fff;
+  display: flex;
+  position:fixed;
+  width:100%;
+  z-index: 1;
+  margin-top:0;
+  opacity:0.9;
+}
+ul{
+  list-style-type: none;
+  float:right;
+}
+li{
+  font-size:12px;
+  float:left;
+  margin:0 30px 0 0;
+  font-weight: bold;
+  position:relative:top:40px;
+  color:#333;
+  cursor: pointer;
+}
+li:hover{
+  color:#888;
+}
+.main-logo{
+  font-size: 80px;
+  color:#000;
+  position: absolute;top:260px;left:140px;
+  line-height:60px;
+}
+.bc-logo{
+  font-size:60px;
+}
+.main-container{
+  width:100%;
+}
+.main-inner{
+  height:750px;
+  width:100%;
+  /* background: linear-gradient(0deg,red,#ffff7a); */
+}
+.img{
+  opacity:0.6;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.circle{
+  height:200px;
+  width:200px;
+  border-radius: 50%;
+  background:#fff;
+  position: absolute;top:500px;left:1000px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+.circle:hover{
+  height:220px;
+  width:220px;
+  transition: 0.3s;
+  position: absolute;top:490px;left:990px;
+  color:#333;
+}
+.circle:active{
+  background:#99ab4e;
+}
+.circle p{
+  color:#666;
+}
+h1{
+  padding-top:40px;
+  text-align: center;
+}
+.text1{
+  text-align: center;
+  line-height: 40px;
+  padding-bottom:100px;
+}
