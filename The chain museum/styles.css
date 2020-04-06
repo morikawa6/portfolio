@@ -1,0 +1,523 @@
+@charset "utf-8";
+body{
+  margin: 0;
+  font-size: 1vw;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+
+.header{
+  margin:0 auto;
+  padding:0 4%;
+}
+ul{
+  list-style: none;
+}
+.menubox{
+  position: fixed;
+  top: 2vw;
+  left: 2.3vw;
+  z-index: 100;
+  height: 45px;
+  width: 45px;
+}
+.check{
+  display: none;
+}
+.label1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+.bb{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 21px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.bb span::before{
+  top:-9px;
+}
+.bb span{
+  top:9px;
+}
+.bb span::after{
+  top:9px;
+}
+
+.bb span::before,.bb span,.bb span::after{
+  cursor: pointer;
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s,-webkit-transform .2s;
+}
+
+.hidden-show{
+  display: none;
+  position:fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+.hidden-show-inner{
+  width: 100vw;
+  height: 100%;
+  background: #fff;
+  font-size: 4.3vw;
+  line-height: 1.25;
+}
+.hiddenTitle{
+  font-weight: bold;
+  display: block;
+  position: fixed;
+  top:20%;
+  padding-left: 3vw;
+}
+.hiddenList{
+  position: fixed;
+  top:35%;
+}
+.hiddenList li{
+  font-size: 4.2vw;
+  font-weight: bold;
+  padding-left: 3vw;
+}
+.hidden-show a{
+  color: black;
+}
+.hidden-show a:hover{
+  color:#999;
+}
+@media (max-width:768px){
+  .hidden-show-inner{
+    font-size: 10vw;
+  }
+  .hiddenTitle{
+    position: fixed;
+    top:30%;
+    padding-left: 5vw;
+  }
+  .hiddenList{
+    position: fixed;
+    top:45%;
+  }
+  .hiddenList li{
+    font-size: 10vw;
+    padding-left: 5vw;
+  }
+}
+
+.headerList{
+  float: right;
+}
+.headerList li{
+  float:left;
+}
+.to{
+  display: block;
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: bold;
+  color: black;
+  padding: 1vw  0 0 3vw;
+}
+
+.header{
+  height: 50px;
+  font-family: aktiv-grotesk,sans-serif;
+}
+
+.main{
+  margin: 0;
+  font-family: "Noto Sans Japanese","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",sans-serif;
+}
+.section{
+  display:inline-block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.mainTitle{
+  text-align: center;
+  font-size: 7vw;
+  font-family: aktiv-grotesk,sans-serif;
+  margin: 240px 0px 80px 0px;
+  animation: fadeInUp 2s ease;
+}
+.mainText{
+  text-align: center;
+  font-size: 1.8vw;
+  font-weight: bold;
+  line-height: 2.0;
+  letter-spacing: 0px;
+  font-family: "Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3","メイリオ",sans-serif;
+}
+.openBr{
+  display:none;
+}
+.hiddenBr{
+  display: inline;
+}
+.contentsTitle{
+  display: flex;
+  justify-content: center;
+  clear: both;
+  font-size: 1.4vw;
+  margin:10vw 0 4vw;
+}
+.flex{
+  display: grid;
+  gap:26px;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  margin-top: 6px;
+  margin-bottom: 50px;
+  width: 80%;
+  text-align: center;
+}
+.flex2{
+  display: grid;
+  gap:26px;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 6px;
+  margin-bottom: 50px;
+  width: 80%;
+}
+.flex3{
+  display: grid;
+  gap:26px;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 6px;
+  margin-bottom: 50px;
+  width: 80%;
+}
+.item{
+  text-align: center;
+  display: block;
+}
+.itemTitle{
+  display: inline-block;
+  font-size: 2vw;
+  margin: 0 0 11.2571px;
+  border-bottom: 1px solid black;
+}
+.itemText{
+  font-size:1vw;
+  line-height: 2.0;
+  font-weight: bold;
+}
+
+.imgMuseum{
+  width: 480px;
+}
+.museumText{
+  font-size: 1vw;
+  font-weight: bold;
+  line-height: 2.0;
+  margin: 1.5vw 0;
+  line-height: 1.8
+}
+.bar{
+  width:17px;
+  margin-bottom:10px;
+  border-bottom:0.8px solid #ccc;
+}
+.person{
+  font-size: 1vw;
+  font-weight: bold;
+  color: #555;
+}
+.place{
+  font-size: 1vw;
+  color: #777;
+}
+
+.detail{
+
+}
+.teamMember{
+
+}
+.imgMember{
+  width:100%;
+}
+.memberName{
+  margin: 0;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+.memberRubi{
+  margin: 0;
+  color: #999;
+  font-size: 0.8vw;
+}
+.memberStatus{
+  margin-top:1vw;
+}
+.memberText{
+  font-size: 0.9vw;
+  margin:8px 0 10px 0;
+}
+
+.flexalign{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.WantedText{
+  text-align:center;
+  font-weight: bold;
+  font-size: 1vw;
+  margin-bottom: 5vw;
+  line-height: 2.0;
+}
+.Wanted{
+  text-decoration: none;
+  display: block;
+  color:#333;
+  font-size: 1.5vw;
+  font-weight: bold;
+  background-color: #f9e1e3;
+  padding:1vw 4vw;
+  margin: 0 auto;
+}
+.Wanted:hover{
+  transition: 0.2s;
+  background: #lightpink;
+  color:#ddd;
+  background-color:#fff0f5;
+}
+.lastlogo{
+  text-align: center;
+  font-size: 2.1vw;
+  margin-bottom: 2vw;
+}
+.info{
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1vw;
+  display:block;
+  text-align: center;
+}
+.footer{
+  text-align: center;
+}
+.rights{
+  padding: 120px 0 20px 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+@media (max-width:768px){
+  .hiddenBr{
+    display: inline;
+  }
+  .openbar{
+    display:none;
+  }
+  .tomail{
+    display: none;
+  }
+  .toface{
+    display: block;
+    position: fixed;
+    top: 5vw;
+    left: 86vw;
+    height: 23px;
+    width: 23px;
+    background-image: url(./img/icon-fb.svg);
+    background-repeat: no-repeat;
+    background-size: 11px 18px;
+    background-position: center;
+    text-indent: -9999px;
+  }
+  .menubox{
+    position: fixed;
+    top: .93vw;
+    left: 5vw;
+    z-index: 100;
+    height: 34px;
+    width: 34px;
+  }
+  .label1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+  }
+  .bb{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .bb span::before{
+    top:-7px;
+  }
+  .bb span{
+    top:7px;
+  }
+  .bb span::after{
+    top:7px;
+  }
+  .mainTitle{
+    font-size: 12vw;
+    margin: 50vw 0px 12vw 0px;
+    line-height:0.9;
+  }
+  .mainText{
+    font-size: 4.5vw;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contentsTitle{
+    margin: 30vw 0 20vw;
+    font-size: 5vw;
+  }
+  .contents h1{
+    height: 3.5vw;
+    width: 100%;
+    border-bottom:1px solid #d9d9d9;
+  }
+  .itemTitle{
+    font-size: 8vw;
+  }
+  .itemText{
+    font-size: 3.5vw;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .flex{
+    grid-template-columns: repeat(1,1fr);
+    width: 95%;
+    gap:50px;
+  }
+  .flex2{
+    grid-template-columns: repeat(1,1fr);
+    width: 90%;
+  }
+  .flex3{
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    margin-top: 50px;
+  }
+  .flexalign{
+    width:100%;
+  }
+  .museumExample{
+    margin-bottom: 12vw;
+  }
+  .museumText{
+    font-size: 3.5vw;
+    margin:20px 0;
+  }
+  .bar{
+    margin:20px 0 15px;
+    border-bottom:0.8px solid #ccc;
+  }
+  .person{
+    font-size: 3.5vw;
+  }
+  .place{
+    font-size: 3vw;
+  }
+  .memberName{
+    font-size: 4vw;
+  }
+  .memberRubi{
+    font-size: 3vw;
+  }
+  .memberStatus{
+    font-weight: normal;
+    margin:2vw 0 3vw;
+    font-size: 3.2vw;
+  }
+  .memberText{
+    font-size: 3vw;
+    font-weight: normal;
+    text-align: justify;
+  }
+  .WantedText{
+    font-size: 4vw;
+  }
+  .Wanted{
+    font-size: 4.5vw;
+    padding:4vw 25vw;
+  }
+  .lastlogo{
+    font-size: 7vw;
+  }
+  .info{
+    font-size: 4vw
+  }
+}
+
+
+.anime1 {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:0.8s;
+ -ms-animation-duration:0.8s;
+ animation-duration:0.8s;
+ -webkit-animation-name: anime1;
+ animation-name: anime1;
+ visibility: visible !important;
+}
+@keyframes anime1 {
+    0% {
+        opacity:  0;
+        top: 50px;
+    }
+    100% {
+        opacity:  1;
+        top: 0;
+    }
+}
+
+.fadeInUp {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1.5s;
+ -ms-animation-duration:1.5s;
+ animation-duration:1.5s;
+ -webkit-animation-name: fadeInUp;
+ animation-name: fadeInUp;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInUp {
+ 0% { opacity: 0; -webkit-transform: translateY(50px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInUp {
+ 0% { opacity: 0; -webkit-transform: translateY(50px); -ms-transform: translateY(50px); transform: translateY(50px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
